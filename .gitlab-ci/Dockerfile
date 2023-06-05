@@ -1,7 +1,7 @@
 # The image is also used for libxslt, that's why we need git and
 # libgcrypt-dev.
 
-FROM ubuntu:22.10
+FROM mipsdkcontainer.azurecr.io/library/ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get upgrade -y && \
